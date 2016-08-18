@@ -35,21 +35,64 @@
               </li> -->
             </ul>
           </li>
+          <li><a href="elements.html">Events</a></li>
+          <li><a href="elements.html">Netivot Network</a></li>
           <li><a href="elements.html">Resources</a></li>
           <li><a href="#" class="button alt">Contact</a></li>
         </ul>
       </nav>
     </div>
 
+    <!-- Main -->
+      <section id="main">
+        <div class="container">
+          <header class="major">
+            <h2>Netivot</h2>
+            <p>an international community for LGBTQ Jews engaged with traditional Judaism</p>
+          </header>
+          <div class="row 200%">
+            <div class="4u 12u$(medium)">
+
+              <!-- Sidebar -->
+                <section id="sidebar">
+                  <section>
+                    <h3>Boston Beach Day</h3>
+                    <p>On August 28, Netivot Boston is going to the beach!</p>
+                    <footer>
+                      <ul class="actions">
+                        <li><%= button_to("Learn More", "https://docs.google.com/forms/d/e/1FAIpQLSdcwjrnDdGd-CQzdsM915adU0XbZEAuAifTbYWXLbG2zdr5rw/viewform?c=0&w=1") %></li>
+                      </ul>
+                    </footer>
+                  </section>
+                  <hr />
+                  <section>
+                    <h3>Netivot Network</h3>
+                    <p>We’re excited to announce the launch of our new program, Netivot Network!</p>
+                    <footer>
+                      <ul class="actions">
+                        <li><%= button_to("Learn More", new_network_path, method: :get) %></li>
+                      </ul>
+                    </footer>
+                  </section>
+                </section>
+
+            </div>
+            <div class="8u$ 12u$(medium) important(medium)">
+              <%= yield %>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
 
-    <%= yield %>
 
 
     <!-- Footer -->
       <div id="footer">
         <div class="container">
           <div class="row 200% uniform">
+
             <section class="4u 12u$(medium) 12u$(small)">
               <header class="major">
                 <h3>About</h3>
@@ -59,24 +102,8 @@
                 <li><a href="#" class="button alt">Learn more</a></li>
               </ul>
             </section>
-            <section class="4u 6u(medium) 12u$(small)">
-              <header class="major">
-                <h3>Recent News</h3>
-              </header>
-              <ul class="updates">
-                <li>
-                  <p>
-                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem voluptas provident illum vitae ad, placeat ipsa, porro veritatis.</a>
-                  </p>
-                  <span class="timestamp">4 hours ago</span>
-                </li>
-                <li>
-                  <p>
-                    <a href="#">Veniam consectetur, fuga recusandae id voluptate obcaecati illo nisi atque aliquid facilis tempore, magni soluta sequi dicta reiciendis minima.</a>
-                  </p>
-                  <span class="timestamp">4 hours ago</span>
-                </li>
-              </ul>
+            <section class="4u 12u$(medium) 12u$(small)">
+
             </section>
             <section class="4u$ 6u$(medium) 12u$(small)">
               <header class="major">
