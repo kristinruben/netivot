@@ -6,9 +6,106 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/92d99cf3de.js"></script>
   </head>
 
-  <body>
+<body>
+
+  <!-- Header -->
+    <div id="header">
+      <h1 id="logo"><a href="index.html">Netivot</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">About</a>
+            <ul>
+              <li><a href="left-sidebar.html">Our Team</a></li>
+              <li><a href="right-sidebar.html">Join Netivot</a></li>
+              <!-- <li>
+                <a href="#">Submenu</a>
+                <ul>
+                  <li><a href="#">Option 1</a></li>
+                  <li><a href="#">Option 2</a></li>
+                  <li><a href="#">Option 3</a></li>
+                  <li><a href="#">Option 4</a></li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>
+          <li><a href="elements.html">Resources</a></li>
+          <li><a href="#" class="button alt">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
     <%= yield %>
+
+
+    <!-- Footer -->
+      <div id="footer">
+        <div class="container">
+          <div class="row 200% uniform">
+            <section class="4u 12u$(medium) 12u$(small)">
+              <header class="major">
+                <h3>About</h3>
+              </header>
+              <p>Netivot is an international community that supports LGBTQ Jews engaged with traditional Judaism. We hold social and educational events that explore the intersection between LGBTQ and Orthodox/traditional Jewish identities.</p>
+              <ul class="actions">
+                <li><a href="#" class="button alt">Learn more</a></li>
+              </ul>
+            </section>
+            <section class="4u 6u(medium) 12u$(small)">
+              <header class="major">
+                <h3>Recent News</h3>
+              </header>
+              <ul class="updates">
+                <li>
+                  <p>
+                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptatem voluptas provident illum vitae ad, placeat ipsa, porro veritatis.</a>
+                  </p>
+                  <span class="timestamp">4 hours ago</span>
+                </li>
+                <li>
+                  <p>
+                    <a href="#">Veniam consectetur, fuga recusandae id voluptate obcaecati illo nisi atque aliquid facilis tempore, magni soluta sequi dicta reiciendis minima.</a>
+                  </p>
+                  <span class="timestamp">4 hours ago</span>
+                </li>
+              </ul>
+            </section>
+            <section class="4u$ 6u$(medium) 12u$(small)">
+              <header class="major">
+                <h3>Contact</h3>
+              </header>
+              <ul class="labeled-icons">
+                <li>
+                  <h4 class="icon fa-envelope"><span class="label">Email</span></h4>
+                  <%= mail_to("netivotlgbtq@gmail.com", "netivotlgbtq@gmail.com") %>
+                </li>
+                <li>
+                  <h4 class="icon fa-instagram"><span class="label">Instagram</span></h4>
+                  <%= link_to("instagram.com/netivot", "https://www.instagram.com/netivot/") %>
+                </li>
+                <li>
+                  <h4 class="icon fa-twitter"><span class="label">Twitter</span></h4>
+                  <%= link_to("@netivotlgbtq", "https://twitter.com/netivotlgbtq") %>
+                </li>
+                <li>
+                  <h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
+                  <%= link_to("facebook.com/netivotlgbtq", "https://www.facebook.com/netivotlgbtq") %>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="copyright">
+          &copy; Netivot. All rights reserved.
+        </div>
+      </div>
   </body>
 </html>

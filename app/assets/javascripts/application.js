@@ -12,4 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require skel.min
+//= require jquery.dropotron.min
+//= require jquery.onvisible.min
+//= require jquery.poptrox.min
+//= require util
+//= require main
 //= require_tree .
