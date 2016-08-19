@@ -15,10 +15,10 @@
 
   <!-- Header -->
     <div id="header">
-      <h1 id="logo"><a href="index.html">Netivot</a></h1>
+      <h1 id="logo"><%= link_to("Netivot", root_path) %></h1>
       <nav id="nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><%= link_to("Home", root_path) %></li>
           <li>
             <a href="#">About</a>
             <ul>
@@ -35,10 +35,9 @@
               </li> -->
             </ul>
           </li>
-          <li><a href="elements.html">Events</a></li>
-          <li><a href="elements.html">Netivot Network</a></li>
-          <li><a href="elements.html">Resources</a></li>
-          <li><a href="#" class="button special">Contact</a></li>
+          <li><%= link_to("Events", new_event_path) %></li>
+          <li><%= link_to("Netivot Network", new_network_path) %></li>
+          <li><%= link_to("Resources", new_resource_path) %></li>
         </ul>
       </nav>
     </div>
