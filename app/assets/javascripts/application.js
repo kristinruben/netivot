@@ -18,4 +18,7 @@
 //= require jquery.poptrox.min
 //= require util
 //= require main
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree .
