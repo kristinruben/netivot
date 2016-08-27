@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 $(function() {
-  var Hello = React.createClass({
+  let Button = React.createClass({
     getInitialState: function(){
         return {
             color: 'button special small icon fa-close fa-lg'
@@ -17,9 +17,11 @@ $(function() {
         }
     },
     render: function() {
-        return <button className={this.state.color} onClick={this.handleClick}>Click me to change</button>
+        return <button className={this.state.color} onClick={this.handleClick}>city</button>
     }
 });
 
-ReactDOM.render(<Hello />, document.getElementById('app'));
+ReactDOM.render(<Button />, document.getElementById('cities'));
 });
+
+model.exports = Button;
