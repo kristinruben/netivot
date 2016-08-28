@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 $(function() {
-  let Button = React.createClass({
+  let Event = React.createClass({
     getInitialState: function(){
         return {
             color: 'button special small icon fa-close fa-lg'
@@ -17,11 +17,12 @@ $(function() {
         }
     },
     render: function() {
-        return <button className={this.state.color} onClick={this.handleClick}>city</button>
+        return
+        <button className={this.state.color} onClick={this.handleClick}>Shabbat</button>
     }
 });
 
-ReactDOM.render(<Button />, document.getElementById('cities'));
+ReactDOM.render(<Event />, document.getElementById('events'));
 });
 
-model.exports = Button;
+model.exports = Event;
