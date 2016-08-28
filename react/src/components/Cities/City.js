@@ -1,4 +1,3 @@
-// import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -17,8 +16,7 @@ $(function() {
         }
     },
     render: function() {
-        return
-        <button className={this.state.color} onClick={this.handleClick}>Tel Aviv</button>
+        return <button className={this.state.color} onClick={this.handleClick}>city</button>
     }
 });
 

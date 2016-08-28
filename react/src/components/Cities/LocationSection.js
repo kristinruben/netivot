@@ -2,11 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import City from './City';
 
-let CitiesPage = React.createClass({
-  render() {
+let LocationSection = React.createClass({
     return
-    <City />
-  }
+    <div><City /></div>
 });
 
-module.exports = CitiesPage;
+model.exports = LocationSection;
