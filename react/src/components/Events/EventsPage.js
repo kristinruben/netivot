@@ -1,6 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Event from './Event';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import Event from './Event';
 
 let EventsPage = React.createClass({
   render() {
@@ -9,4 +9,4 @@ let EventsPage = React.createClass({
   }
 });
 
-module.exports = EventsPage;
+export default EventsPage;
