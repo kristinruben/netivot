@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Dependencies
+* [PostgreSQL](http://postgresapp.com/)
+* Ruby 2.3.0
+* Rails 5
+* [Vue.js](https://vuejs.org/)
 
-Things you may want to cover:
+### Getting Up And Running
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Clone down repo: `$ git clone https://github.com/kristinruben/netivot.git`
+* Install gems: `$ bundle install`
+* Create the database:
+```
+$ rake db:create
+$ rake db:schema:load
+$ rake db:seed
+```
+* Start the server: `$ rails s`
