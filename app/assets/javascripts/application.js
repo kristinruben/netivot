@@ -18,9 +18,7 @@
 //= require jquery.poptrox.min
 //= require util
 //= require main
-//= require react
-//= require react_ujs
-//= require selectize
+//= require vue
 //= require_tree .
 
 
