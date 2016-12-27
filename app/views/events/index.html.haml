@@ -1,2 +1,7 @@
 %section#content
   %h2 Events
+  - if @events
+    = @events.each do |event|
+      = event.created_at
+  - else
+    We don't have any upcoming events scheduled as of #{Time.now.strftime('%m/%d/%Y')}, but please check back soon!
