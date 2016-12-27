@@ -3,7 +3,7 @@
 ### Dependencies
 * [PostgreSQL](http://postgresapp.com/)
 * Ruby 2.3.0
-* Rails 5
+* Rails 4.2.6
 * [Vue.js](https://vuejs.org/)
 
 ### Getting Up And Running
