@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   resources :join, only: [:new, :create, :edit, :update, :destroy]
   resources :contact, only: [:new, :create, :edit, :update, :destroy]
   resources :resources, only: [:new, :create, :edit, :update, :destroy]
-  resources :events, only: [:new, :create, :edit, :update, :destroy]
+  resources :events
 end

@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'react-rails'
+gem 'vuejs-rails'
+gem 'devise'
+gem 'haml'
+gem 'haml-rails'
 gem 'rails_12factor', group: :production
 gem 'sprockets', '3.6.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
